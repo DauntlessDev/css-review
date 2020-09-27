@@ -5,6 +5,7 @@
 
 body{
     background-color: black;
+    color: white;
 }
 
 
@@ -23,6 +24,22 @@ header:hover{
     background-color: red;
 }
 
+.navigation{
+    background-color: gray;
+    margin: 0px 10px 0px auto;
+    align-items: right;
+    display: block;
+    width: fit-content;
+}
+
+.navigation a{
+    margin: 50px 10px 20px;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid yellowgreen;
+    background-color: orange;
+    color: white;
+}
 .main-content > p {
     padding-top: 40px;
     color: red;
@@ -99,3 +116,70 @@ a.styled:hover{
     color: orange;
     text-decoration: underline;
 }
+
+.inline-blocks > h5{
+    display: inline-block;
+    border: 2px solid red;
+    background-color: orange;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    height: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.child-inline-blocks h5{
+    background: orange ;
+    background: -moz-linear-gradient(top, orange 0%, red 100%); 
+    background: -webkit-linear-gradient(top, orange 0%, red 100%);
+    background: linear-gradient(top, orange 0%, red 100%);
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    width: 30%/3;
+    text-align: center;
+    border-radius: 50px;
+
+}
+
+.child-inline-blocks h5:hover{
+    background: red ;
+    background: -moz-linear-gradient(top, red 0%, orange 100%); 
+    background: -webkit-linear-gradient(top, rgb(103, 65, 65) 0%, orange 100%);
+    background: linear-gradient(top, red 0%,orange 100%);
+   
+}
+
+.circles{
+    display: relative;
+}
+
+div[id$="circle"]{
+    padding:100px 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 150px;
+    opacity: 0.8;
+    text-align:center;
+}
+#blue-circle{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: blue;
+}
+#green-circle{
+    position: absolute ;
+    top: 50px;
+    left: 250px;
+    background-color: green;
+}
+#pink-circle{
+    position: absolute ;
+    top: 250px;
+    left: 150px;
+    background-color: pink;
+    box-shadow: 2px 2px 4px 2px orangered;
+}
+
