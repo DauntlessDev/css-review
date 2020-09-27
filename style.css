@@ -2,3 +2,51 @@
     margin: 0;
     padding: 0;
 }
+
+
+header {
+    font-size: 30px;
+    background-color: blue;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.main-content > p {
+    padding-top: 40px;
+    color: red;
+    font-weight: bold;
+}
+
+
+
+li[class~="deck"]{
+    color: green;
+}
+
+.sub-content {
+    color: purple;
+}
+
+#list-first {
+    color: blue;
+}
+
+li[id="item-first"]{
+    color:yellow;
+}
+
+a[href$="pdf"]{
+    color:greenyellow;
+}
+
+a[href^="yoye"]{
+    font-weight: bold;
+}
+
+.all-articles h1 + p{
+    color: indigo;
+    font-weight: bold;
+}
