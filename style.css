@@ -3,23 +3,53 @@
     padding: 0;
 }
 
+body{
+    background-color: black;
+}
+
 
 header {
     font-size: 30px;
     background-color: blue;
     position: absolute;
     width: 100%;
+    letter-spacing: 1rem;
     top: 0;
     left: 0;
     text-align: center;
+}
+
+header:hover{
+    background-color: red;
 }
 
 .main-content > p {
     padding-top: 40px;
     color: red;
     font-weight: bold;
+    text-transform: lowercase;
 }
 
+div[class^="box"] {
+    margin: 100px auto;
+    padding: 30px 5%;
+    border: 1px solid black;
+    color: white;
+    width: 50%;
+}
+.box-red{
+ background: red;
+}
+
+.box-green{
+background-color: green;
+text-align: right;
+}
+
+.box-blue{
+    background: blue;
+    text-align: center;
+}
 
 
 li[class~="deck"]{
@@ -38,6 +68,14 @@ li[id="item-first"]{
     color:yellow;
 }
 
+
+p:nth-of-type(2n+1){
+    background-color: purple;
+}
+p:nth-child(4),p:first-child,p:last-child{
+    background-color: green;
+}
+
 a[href$="pdf"]{
     color:greenyellow;
 }
@@ -49,4 +87,15 @@ a[href^="yoye"]{
 .all-articles h1 + p{
     color: indigo;
     font-weight: bold;
+}
+
+a.styled{
+    text-decoration: none;
+    color: red;
+    font-weight: 500;
+}
+
+a.styled:hover{
+    color: orange;
+    text-decoration: underline;
 }
